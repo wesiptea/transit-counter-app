@@ -1,4 +1,4 @@
-// TRANSIT COUNTER APP
+// COUNTER APP
 
 // pseudo code:
 // 1 intialize the count as 0
@@ -30,10 +30,12 @@ function save() {
     let counterStr = count + " - ";
     saveEl.textContent += counterStr;
     // to make sure spacing remains intact: textContent preserves all info in strings - inc non-human readable content (i.e., spaces) - as innerText does not
+    countEl.textContent = 0;
+    count = 0;
 }
 
 
-// Notes:
+// Practice notes:
 
 // increment counter
 // let count = 5

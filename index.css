@@ -1,8 +1,15 @@
 body {
-    background: tomato;
-    font-family: 'Montserrat', sans-serif;    font-weight: bold;
+    background:lightblue;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight:bolder;
     text-align: center;
     /* to center all element within parent element */
+    display: grid;
+    place-items: center;
+}
+
+div {
+    max-width: 40%;
     display: grid;
     place-items: center;
 }
@@ -26,7 +33,7 @@ button {
     font-weight: bold;
     width: 200px;
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 #increment-btn {
