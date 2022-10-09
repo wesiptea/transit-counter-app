@@ -6,6 +6,7 @@
 // 3 increment the count variable when the button is clicked
 // 4 change the count-el in the HTML to reflect the new count
 
+let saveEl = document.getElementById("save-el");
 // 4 step one
 let countEl = document.getElementById("count-el");
 // console.log(countEl); - used to verify that the element is accessed
@@ -16,11 +17,19 @@ let count = 0;
 // 2 listen for clicks on the increment button; this function will run each time button is clicked
 function increment() {
     // console.log("Click"); - used to check for bugs
+
     // 3 increment the count when button is clicked
-    count = count + 1;
+    count += 1;
+    // shorthand for: count = count + 1;
+
     // 4 step two - update to the number counter on screen with click
-    countEl.innerText = count;
-    // console.log(count);
+    countEl.textContent = count;
+}
+
+function save() {
+    let counterStr = count + " - ";
+    saveEl.textContent += counterStr;
+    // to make sure spacing remains intact: textContent preserves all info in strings - inc non-human readable content (i.e., spaces) - as innerText does not
 }
 
 
